@@ -1,0 +1,66 @@
+body {
+    margin:  0;
+    background-color: #FFF;
+    
+}
+header {
+    text-align: center;
+}
+.genius-main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.genius-grid {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 1px solid #FFF;
+    background-color: #000;
+    display: grid;
+    grid-template-areas: 'verde vermelho''amarelo azul';
+    grid-gap: 10px;
+    
+}
+
+.green {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 50px;
+}
+
+.red {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 50px;
+}
+.blue {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 50px;
+}
+.yellow {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 50px;
+}
+
+.play {
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+    border-radius: 7px;
+    padding: 5px 20px 5px 20px;
+}
+
+.selected{
+    opacity: 0.5;
+}
